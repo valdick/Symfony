@@ -1,0 +1,8 @@
+vlad_hello:
+    resource: "@VladHelloBundle/Resources/config/routing.yml"
+    prefix:   /
+
+a2x_blog:
+    resource: "@A2xBlogBundle/Controller/"
+    type:     annotation
+    prefix:   /
