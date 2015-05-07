@@ -1,3 +1,38 @@
 vlad_hello_homepage:
     path:     /hello/{name}/{last_name}
     defaults: { _controller: VladHelloBundle:Default:index }
+
+vlad_first:
+    path:     /first
+    defaults: { _controller: VladHelloBundle:First:index }
+
+vlad_first_new:
+    path:     /first/new
+    defaults: { _controller: VladHelloBundle:First:new }
+
+vlad_first_create:
+    path:     /first/create
+    defaults: { _controller: VladHelloBundle:First:create }
+
+vlad_first_show:
+    path:     /first/{id}
+    defaults: { _controller: VladHelloBundle:First:show }
+    requirements:
+                  id  : \d+
+
+vlad_first_edit:
+    path:     /first/edit/{id}
+    defaults: { _controller: VladHelloBundle:First:edit }
+    requirements:
+                  id  : \d+
+
+vlad_first_update:
+    path:     /first/update/{id}
+    defaults: { _controller: VladHelloBundle:First:update }
+    requirements:
+                  id  : \d+
+vlad_first_delete:
+    path:     /first/delete/{id}
+    defaults: { _controller: VladHelloBundle:First:delete }
+    requirements:
+                  id  : \d+
